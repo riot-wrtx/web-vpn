@@ -36,13 +36,13 @@ apt install python3-pip
 sudo apt-get install -y p7zip-full
 cd /usr/bin
 clear
-wget https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/bot/bot.zip
+wget https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/Bot/bot.zip
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
 rm -rf bot.zip
 clear
-wget https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/bot/kyt.zip
+wget https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/Bot/kyt.zip
 unzip kyt.zip
 pip3 install -r kyt/requirements.txt
 clear
@@ -129,13 +129,13 @@ systemctl enable kyt &> /dev/null
 systemctl start kyt &> /dev/null
 systemctl restart kyt &> /dev/null
 
-wget -q -O /usr/bin/addtrgo "https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/trgo/addtrgo.sh" && chmod +x /usr/bin/addtrgo
+#wget -q -O /usr/bin/addtrgo "https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/trgo/addtrgo.sh" && chmod +x /usr/bin/addtrgo
 
-wget -q -O /usr/bin/deltrgo "https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/trgo/deltrgo.sh" && chmod +x /usr/bin/deltrgo
+#wget -q -O /usr/bin/deltrgo "https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/trgo/deltrgo.sh" && chmod +x /usr/bin/deltrgo
 
-wget -q -O /usr/bin/cektrgo "https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/trgo/cektrgo.sh" && chmod +x /usr/bin/cektrgo
+#wget -q -O /usr/bin/cektrgo "https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/trgo/cektrgo.sh" && chmod +x /usr/bin/cektrgo
 
-wget -q -O /usr/bin/renewtrgo "https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/trgo/renewtrgo.sh" && chmod +x /usr/bin/renewtrgo
+#wget -q -O /usr/bin/renewtrgo "https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/trgo/renewtrgo.sh" && chmod +x /usr/bin/renewtrgo
 
 echo "Done"
 echo " Installations complete, type /menu on your bot"
@@ -223,13 +223,13 @@ rm -rf /usr/bin/kyt.zip
 rm -rf /usr/bin/kyt
 sleep 2
 cd /usr/bin
-wget https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/bot/bot.zip
+wget https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/Bot/bot.zip
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
 rm -rf bot.zip
 clear
-wget https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/bot/kyt.zip
+wget https://raw.githubusercontent.com/riot-wrtx/web-vpn/main/Bot/kyt.zip
 unzip kyt.zip
 cd kyt
 pip3 install -r kyt/requirements.txt
