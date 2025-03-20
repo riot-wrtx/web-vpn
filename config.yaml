@@ -1,0 +1,28 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+secrets:
+  GITHUB_TOKEN: ${{ secrets.regis }}
+  MY_SECRET: ${{ secrets.regis }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run script
+        run: |
+          echo "GitHub Token: $GITHUB_TOKEN"
+          echo "My Secret: $MY_SECRET"
+
+      - name: Deploy
+        run: |
+          # Deploy code here
+          echo "Code deployed successfully"
+          
