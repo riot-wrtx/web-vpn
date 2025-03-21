@@ -1,6 +1,25 @@
-steps:
-  - shell: bash
-    env:
-      SUPER_SECRET: ${{ secrets.regis }}
-    run: |
-      example-command "$SUPER_SECRET"
+name: Akses GitHub Secret
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  akses-secret:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout kode
+        uses: actions/checkout@v2
+
+      - name: Akses GitHub Secret
+        env:
+          GITHUB_SECRET: ${{ secrets.regis }}
+        run: |
+          echo "Nilai GitHub Secret: $GITHUB_SECRET"
+
+      - name: Jalankan skrip
+        env:
+          GITHUB_SECRET: ${{ secrets.regis }}
+        run: |
+          ./skrip.sh
