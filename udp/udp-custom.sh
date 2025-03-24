@@ -4,12 +4,8 @@ cd
 mkdir -p /root/udp
 
 # change to time GMT+7
-echo "change to time GMT+7"
-ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
-
-# install udp-custom
 echo downloading udp-custom
-wget -q --show-progress --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1qSQeZhKfEA72klKolJIKy_xnjnyx3tRj' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1Alr7rbAPlUEWh5i8j6iZ0HswuRsZZ_OV" -O /etc/udp/udp-custom && rm -rf /tmp/cookies.txt
+wget -q --show-progress --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1se4Lq16hOJkpL-MsoyFv2A0RvoKhB1nU' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1Alr7rbAPlUEWh5i8j6iZ0HswuRsZZ_OV" -O /etc/udp/udp-custom && rm -rf /tmp/cookies.txt
 chmod +x /etc/udp/udp-custom
 
 echo downloading default config
